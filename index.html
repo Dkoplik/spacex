@@ -1,31 +1,30 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Space X</title>
-    <meta charset="UTF-8" />
-
-    <script src="src/index.js" type="module"></script>
-    <link href="styles/app.css" rel="stylesheet">
+    <meta charset="utf-8">
+    <title>SpaceX Launchpads</title>
+    <link rel="stylesheet" href="styles/app.css">
 </head>
-
 <body>
-<header>
-    <h1> SpaceX Stats</h1>
-</header>
-    <main class="main">
+    <div class="main">
         <aside class="aside">
-        <h3>Launches</h3>
-        <div id="listContainer">
-
-        </div>
+            <button id="refreshBtn">Refresh data</button>
+            <div id="listContainer"></div>
         </aside>
-        <content class="content">
-            <div id="map"> </div>
-        </content>
-    </main>
 
-<footer>
+        <div class="content">
+            <div id="padInfo" class="pad-info">Hover a launch to see pad details</div>
 
-</footer>
+            <div class="map-wrap">
+                <div id="map"></div>
+                <div class="map-controls">
+                    <button id="zoomIn"    title="Zoom in"    aria-label="Zoom in">+</button>
+                    <button id="zoomOut"   title="Zoom out"   aria-label="Zoom out">−</button>
+                    <button id="zoomReset" title="Reset zoom" aria-label="Reset zoom">⟲</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="module" src="src/index.js"></script>
 </body>
 </html>
