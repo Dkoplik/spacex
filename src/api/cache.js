@@ -1,4 +1,3 @@
-// src/api/cache.js
 const CACHE_PREFIX = "spacex-cache:";
 const DEFAULT_TTL = 10 * 60 * 1000; // 10 minutes
 
